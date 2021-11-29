@@ -1,0 +1,23 @@
+<div class="container-fluid">
+<div class="container">
+<div class="row">
+    <div class="card" *ngFor="let blog of blogsDataArr,let i=index">
+      <div class="cards" *ngIf="i<=4">
+      <div class="header">
+        <img [src]="blog.urlToImage" *ngIf="blog.urlToImage != null else noimg"> 
+        <ng-template #noimg>
+            <img src="../../../assets/images/Musk-1.jpg">
+       </ng-template>
+        <h1>{{blog.title | slice:0:70 }}</h1><br>
+      </div>
+      <div class="body">
+        {{blog.description | slice:0:100}}
+      </div>
+    </div>
+    </div>
+    <div class="view">
+      <button (click)=route()>View More</button>
+    </div>
+  </div>
+</div>
+</div>

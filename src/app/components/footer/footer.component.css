@@ -1,0 +1,27 @@
+
+.container{
+    background:#1d202c; 
+    width: 100%;
+   }
+.col-1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:25%;
+    display: inline-block;
+}
+.row{
+    margin-left: 130px;
+}
+ li{
+    list-style: none;
+    padding-bottom:6px;
+    padding-top:6px;
+}
+
+li a{
+    text-decoration: none;
+    color: #a6aab6;
+}
+.bold a{
+    color:#ffffff;
+}

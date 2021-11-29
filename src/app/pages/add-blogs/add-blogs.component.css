@@ -1,0 +1,46 @@
+.form-control.ng-touched.ng-invalid {
+    border:1px solid red;
+   }
+   .form-control.ng-touched.ng-valid {
+    border:1px solid green;
+   }
+
+   .container{
+       width:100%;
+   }
+   .row{
+       width:40%;
+       margin:30px auto;
+       text-align: center;
+       box-shadow: 2px 2px 3px 2px #aaa;
+
+   }
+   h1{
+       margin:25px 0;
+   }
+
+   label{
+       font-size: 25px;
+       text-align: left !important;
+   }
+
+   input{
+       font-size: 25px;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       outline: none;
+   }
+
+   textarea{
+    font-size: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+button{
+    font-size: 25px;
+    margin: 20px 10px;
+}

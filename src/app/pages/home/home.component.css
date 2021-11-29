@@ -1,0 +1,35 @@
+.row{
+    margin: 50px auto ;
+}
+  
+.cards{
+    width: 65%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.cards:hover{
+    box-shadow: 2px 2px 6px 1px gray;
+}
+  
+.header > img{
+    width: 100%;
+}
+  
+.view-more-cnt{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+  
+button{   
+padding:10px;
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border:none;
+font-size: 20px;
+color:white;
+margin-left: 570px;
+}
