@@ -1,0 +1,76 @@
+<div class="container-fluid">
+<div class="container">
+<div class="row">
+    <div class="wrapper">
+        <div class="registration_form">
+            <div class="title">
+                Registration Form
+            </div>
+    
+            <form [formGroup]="addprofile">
+                <div class="form_wrap">
+                    <div class="input_grp">
+                        <div class="input_wrap">
+                            <label for="fname">First Name</label>
+                            <input  formControlName="fname" type="text" id="fname" class="form-control">
+                            <small *ngIf="fname.invalid && fname.touched" class="text-danger">Name is Required</small> 
+                        </div>
+                        <div class="input_wrap">
+                            <label>Last Name</label>
+                            <input  formControlName="lname" type="text" id="lname">
+                            <small *ngIf="lname.invalid && lname.touched" class="text-danger">Name is Required</small>
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <label>Email</label>
+                        <input  formControlName="email" type="text" id="email">
+                        <small *ngIf="email.invalid && email.touched" class="text-danger">Name is Required</small>
+                    </div>
+                    <div class="input_wrap">
+                        <label>Date of Birth</label>
+                        <input  formControlName="dob" type="date" id="email">
+                        <small *ngIf="dob.invalid && dob.touched" class="text-danger">Name is Required</small>
+                    </div>
+                    <div class="input_wrap">
+                        <label>Mobile No</label>
+                        <input  formControlName="phone" type="tel" id="email">
+                        <small *ngIf="phone.invalid && phone.touched" class="text-danger">Name is Required</small>
+                    </div>
+                    <div class="input_wrap">
+                        <label>Gender</label>
+                        <ul>
+                            <li>
+                                <label class="radio_wrap">
+                                    <input type="radio" formControlName="gender" name="gender" value="male" class="input_radio" checked>
+                                    <span>Male</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio_wrap">
+                                    <input type="radio" formControlName="gender" name="gender" value="female" class="input_radio">
+                                    <span>Female</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input_wrap">
+                        <label>City</label>
+                        <input  formControlName="city" type="text" id="city">
+                        <small *ngIf="city.invalid && city.touched" class="text-danger">Name is Required</small>
+                    </div>
+                    <div class="input_wrap">
+                        <label>country</label>
+                        <input  formControlName="country" type="text" id="country">
+                        <small *ngIf="country.invalid && country.touched" class="text-danger">Name is Required</small>
+                    </div>
+                    <!-- <div class="input_wrap"> -->
+                        <button (click)="onsubmit(addprofile)"  [disabled]="addprofile.invalid" type="submit"  class="submit_btn">Register Now</button>
+                    <!-- </div> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+

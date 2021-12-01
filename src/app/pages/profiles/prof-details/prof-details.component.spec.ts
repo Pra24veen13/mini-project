@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataTypeModel } from './data-type.model';
+import { ProfDetailsComponent } from './prof-details.component';
 
-describe('DataTypeModel', () => {
-  let component: DataTypeModel;
-  let fixture: ComponentFixture<DataTypeModel>;
+describe('ProfDetailsComponent', () => {
+  let component: ProfDetailsComponent;
+  let fixture: ComponentFixture<ProfDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataTypeModel]
+      declarations: [ ProfDetailsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataTypeModel);
+    fixture = TestBed.createComponent(ProfDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

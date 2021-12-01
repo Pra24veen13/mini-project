@@ -1,43 +1,49 @@
 <div class="container-fluid">
     <div class="container">
-    <div class="row">
-      <h1>Blog Form</h1>
-        <form [formGroup]="addblogs" >
-            <div class="form-group">
+      <div class="row">
+    <div class="wrapper">
+      <div class="registration_form">
+        <div class="title">
+          Blog Form
+      </div>
+        <form [formGroup]="addblogs">
+          <div class="form_wrap">
+            <div class="input_wrap">
               <label  class="blog-form-input">Title</label><br>
               <input formControlName="title" type="text" class="form-control">
               <small *ngIf="title.invalid && title.touched" class="text-danger">Name is Required</small> 
             </div>
-            <div class="form-group">
+            <div class="input_wrap">
               <label class="blog-form-input">Author:</label><br>
-              <input formControlName="author" type="author" class="form-control" >
+              <input formControlName="author" type="text" class="form-control" >
               <small *ngIf="author.invalid && author.touched" class="text-danger">Author is Required</small>
             </div>
-            <div class="form-group">
+            <div class="input_wrap">
               <label class="blog-form-input">Content:</label><br>
               <input formControlName="content" type="text" class="form-control" > 
               <small *ngIf="title.invalid && title.touched" class="text-danger">Content is Required(minimum length 10,numbers are only allowed)</small>
                            </div>
-                            <div class="form-group">
+                            <div class="input_wrap">
                               <label class="blog-form-input">Description:</label><br>
-                              <textarea formControlName="desc" class="form-control" ></textarea>
-                              <small *ngIf="desc.invalid && desc.touched" class="text-danger"> Description is Required(minimum length 10)</small> 
+                              <textarea formControlName="description" class="form-control" ></textarea>
+                              <small *ngIf="description.invalid && description.touched" class="text-danger"> Description is Required(minimum length 10)</small> 
                             </div>
-                            <div class="form-group">
-                                <label class="blog-form-input">Image URL:</label><br>
-                                <input formControlName="imgurl" class="form-control">
-                                <small *ngIf="imgurl.invalid && imgurl.touched" class="text-danger"> ImageUrl is Required</small> 
+                            <div class="input_wrap">
+                                <label class="blog-form-input">URL:</label><br>
+                                <input formControlName="url" type="text" class="form-control">
+                                <small *ngIf="url.invalid && url.touched" class="text-danger"> ImageUrl is Required</small> 
                               </div>
-                              <div class="form-group">
+                              <div class="input_wrap">
                                 <label class="blog-form-input">Published At</label><br>
-                                <input formControlName="published" class="form-control" >
-                                <small *ngIf="published.invalid && published.touched" class="text-danger"> Published At is Required(minimum length 10)</small> 
+                                <input formControlName="publishedAt" type="text" class="form-control" >
+                                <small *ngIf="publishedAt.invalid && publishedAt.touched" class="text-danger"> Published At is Required(minimum length 10)</small> 
                               </div>
-          <button (click)="onsubmit(addblogs)"  [disabled]="addblogs.invalid" type="submit" >Add Blog</button>
-                          
-                          
-                          </form>
-                    </div>   
+          <button (click)="onsubmit(addblogs)"  [disabled]="addblogs.invalid"  type="submit"  class="submit_btn" >Add Blog</button>
+        </div>                 
+        </form>
+     </div>
+   </div>            
+ </div>   
                   </div>
                 </div>
     

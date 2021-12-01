@@ -10,12 +10,13 @@
              <div class="body">
               <h2>{{blog.title}}</h2>
               <h4>{{blog.author}}</h4>
-              <span>{{blog.publishedAt}}</span>
+              <span>{{blog.published}}</span>
               <div>{{blog.content}}</div>
               <p>{{blog.description}}</p>
           </div>
           <div class="delete-edit">
             <button class="del" (click)="delete()">Delete</button>
+            <button claa="edit" (click)="edit()">Edit</button>
           </div>
       </div>
       </div>

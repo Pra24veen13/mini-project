@@ -10,7 +10,9 @@ import { LocalstoragedataservService } from 'src/app/services/localstoragedatase
 export class HomeComponent implements OnInit {
 blogsDataArr:any;
 
-  constructor(private router:Router, private fetchdata:LocalstoragedataservService) { }
+  constructor(private router:Router, private fetchdata:LocalstoragedataservService) { 
+   
+  }
   ngOnInit(): void {
 this.blogsDataArr=this.fetchdata.getdata;
   

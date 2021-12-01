@@ -20,5 +20,8 @@ export class BlogsComponent implements OnInit {
   route(blog:any){
   this.myurl=blog;
   this.router.navigateByUrl('blog-details'+this.myurl);
+  console.log(this.myurl);
+  
   }
-}
+
+  }

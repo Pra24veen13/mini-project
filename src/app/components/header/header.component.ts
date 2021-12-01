@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalstoragedataservService } from 'src/app/services/localstoragedataserv.service';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   navigateByUrl:any;
-  constructor() { }
+  userdata:any;
+ 
+  constructor(private local:LocalstoragedataservService) { 
+    this.userdata=this.local.userdataprof();
+  }
+  
 
   ngOnInit(): void {
   }
-  route(){
-    this.navigateByUrl('blog')
-  }
+ 
 }

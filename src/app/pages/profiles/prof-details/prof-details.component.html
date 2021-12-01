@@ -1,0 +1,59 @@
+<ng-container *ngIf="!account; else  details">
+  
+</ng-container>
+
+<ng-template #details>
+
+<div class="container-fluid">
+<div class="container">
+<div class="row">
+<div class="wrapper">
+    <div class="left">
+        <img src="https://photoviewer.site/dpl/kV2ULbXd75r%2BSZKJ2m%2FMcmqFFala7PhHvSz0MjUSag%2FKR42ETeEvtRbGtJLY5DQxpzj7S%2F5qWg8mLt6H9zAlro%2FSOhpraGJATmgJGUlBxktZC%2FWXEpJMRnqtVyORsqqOPOnkdY3YkKKcl%2FladQ%2BuceADotAn3HMtihGurzJrNtipuc0uHrVVsMTeR4fqJkjZ%2FePkpi3lb7V7iQkL5utCoskSirx2x00fXz1tmtCusI6fBZYh1BGbS369mxkyGam7" 
+        alt="user" width="100">
+        <h4>{{userdata.fname}} {{userdata.lname}}</h4>
+         <p>DOB:{{userdata.dob}}</p>
+         <p>Gender:{{userdata.gender}}</p>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+                 <div class="data">
+                    <h4>Email</h4>
+                    <p>{{userdata.email}}</p>
+                 </div>
+                 <div class="data">
+                   <h4>Phone</h4>
+                    <p>{{userdata.phone}}</p>
+              </div>
+              <div class="data">
+                <h4>City</h4>
+                <p>{{userdata.city}}</p>
+             </div>
+             <div class="data">
+                <h4>Country</h4>
+                <p>{{userdata.country}}</p>
+             </div>
+            </div>
+        </div>
+      
+    
+      
+        <div class="social_media">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="button">
+        <button class="edit" (click)="edit()" >Edit</button>
+     </div>
+ 
+</div>
+</div>
+</div>
+</div>
+</ng-template>
